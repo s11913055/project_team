@@ -1,3 +1,113 @@
-.item_img{
-    text-align: center;
+*{
+    outline: 1px solid red;
 }
+//top
+.prd_in_main{
+    >.container{
+        padding-bottom: 50px;
+        @at-root .prd_in_titleshow {
+            background-image: url('../img/title.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            border: 1px solid #000;
+            @include flex-cen-cen;
+            height: 270px;
+            .prd_in_title {
+              padding-top: 60px;
+            } 
+        }
+        @at-root .prd_in_group{
+            display: flex;
+            justify-content: space-between;
+            @at-root .prd_in_left{
+                
+                width: 50%;
+                // height: 800px;
+                @at-root .item_img{
+                    height: 500px;
+                    display: flex;
+                    align-items: center;
+                    background-color: #faa;
+                    padding: 50px;
+                    >img{
+                        width: 100%;
+                    }
+                }
+                @at-root .item_price{
+                    // height: 100px;
+                    padding: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    >.price_group{
+                        margin: 10px;
+                        >p{
+                            display: inline-block;
+                            margin: 10px 0;
+                        }
+                    }
+                    
+                    >.cart{
+                        @include btnCase(100px, 30px);
+                        background-color: map-get($color,footer_bg_color) ;
+                        color: #fff;
+                        margin: 10px 0;
+                    }
+                    >.heart{
+                        margin: 10px 0;
+                        @include btnCase(60px, 30px);
+                        background-color: map-get($color,footer_bg_color) ;
+                        color: #fff;
+                    }
+                }
+            }
+            // ======商品介紹================================================
+            @at-root .prd_in_right{
+                width: 50%;
+                // height: 800px;
+                // background-color: #f0f;
+                >.prd_in_content{
+                    // margin: 5px;
+                    border: 1px solid #ccc;
+                    @at-root .item_Dsc{
+                        padding: 10px 10px 30px;
+                        >h3{
+                            margin: 20px 0px;
+                        }
+                    }
+                    @at-root .item_Ctx{
+                        padding: 10px 10px 30px;
+                        >h3{
+                            margin: 20px 0px;
+                        }
+                    }
+                    @at-root .good_star{
+                        padding: 10px 10px 30px;
+                        >h3{
+                            margin: 20px 0px;
+                        }
+                        >.scoreAvg{
+                            font-size: 50px;
+                            font-weight: 500;
+                            display: inline;
+                        }
+                        >.total{
+                            display: inline;
+                            font-size: 28px;
+                        }
+                    }
+                    @at-root .evaTimes{
+                        text-align: center;
+                        font-size: 28px;
+                        margin: 20px;
+                    }
+                }
+            }
+        }
+        
+    }
+          
+        
+}
+    
+
