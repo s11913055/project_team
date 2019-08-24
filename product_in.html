@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,56 +8,75 @@
     <title>商品內頁</title>
     <link rel="stylesheet" href="style/index.css">
 </head>
+
 <body>
 
-    <section class="container prd_in_main">
-        <div class="prd_in_titleshow">
-           <h2 class="prd_in_title"></h2> 
-        </div>
-        
-        <div class="prd_in_left">
-            <div class="item_img">
-                <img src="img/title.png" alt="#">
-                <h2>紅豆派</h2>
+    <section class="prd_in_main">
+        <div class="container">
+            <div class="prd_in_titleshow">
+                <h2 class="prd_in_title">紅豆派</h2>
             </div>
-            <div id="item_price">
-                <span class="price">價格:</span>
-                <span id="pNum">價格:</span>
-                <a href="#" class="cart">加入購物車</a>
-                <a href="#" class="heart"><img src="" alt=""></a>
-            </div>
+            <div class="prd_in_group">
+                <div class="prd_in_left">
+                    <div class="item_img">
+                        <img src="https://fakeimg.pl/300x300/" >
+                    </div>
+                    <div class="item_price">
+                        <div class="price_group">
+                            <p class="price">價格: NT$
+                                <span id="pNum">100</span>
+                            </p>
+                        </div>
+                        <a href="#" class="btn cart">加入購物車</a>
+                        <a href="#" class="btn heart">
+                            0000000
+                            <img src="" alt="">
+                        </a>
+                    </div>
 
+                </div>
+                <!-- =====商品介紹==================== -->
+                <div class="prd_in_right">
+                    <div class="prd_in_content">
+                        <div class="item_Dsc">
+                            <h3>商品介紹:</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facere aliquam deleniti delectus
+                                atque excepturi culpa dolor, amet doloribus, harum repudiandae quasi mollitia reprehenderit
+                                possimus? Consequuntur cupiditate iusto aliquid velit.</p>
+                        </div>
+                        <div class="item_Ctx">
+                            <h3>成分:</h3>
+                            <p>基底:南瓜派</p>
+                            <p>配料:紅豆</p>
+                        </div>
+                        <div class="good_star">
+                            <h3>好評度:</h3>
+                            <p class="scoreAvg">4.0
+                                
+                            </p>
+                            <span class="total">/5</span>
+                        </div>
+                        <p class="evaTimes">共133則評價</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="prd_in_right">
-            <div class="item_Dsc">
-                <h3>商品介紹:</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facere aliquam deleniti delectus atque excepturi culpa dolor, amet doloribus, harum repudiandae quasi mollitia reprehenderit possimus? Consequuntur cupiditate iusto aliquid velit.</p>
+    </section>
+    <section class="prd_in_commet">
+        <div class="container">
+            <div class="prd_in_titleshow">
+                <h2 class="prd_in_title"></h2>
             </div>
-            <div class="item_Ctx">
-                <h3>成分:</h3>
-                <p>基底:南瓜派</p>
-                <p>配料:紅豆</p>
-            </div>
-            <div class="good_star">
-                <h3>好評度:</h3>
-                <p class="scoreAvg">4.0</p>
-                <span class="total">/5</span>
-            </div>
-            <p class="evaTimes">共133則評價</p>
+            <p></p>
         </div>
 
-    </section> 
-    <section class="container prd_in_commet">
-        <div class="prd_in_titleshow">
-            <h2 class="prd_in_title"></h2> 
-        </div>
-        <p></p>
 
 
 
     </section>
 
-    
+
 
 </body>
+
 </html>
