@@ -177,20 +177,43 @@ table {
   }
 }
 
-* {
-  outline: 1px solid red;
+.test {
+  width: 100%;
+  height: 150px;
+}
+
+.prd_in_show {
+  background-image: url("../img/same_bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.wrap_bg {
+  width: 75%;
+  max-width: 1250px;
+  background-color: #e9f8ff;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.prd_in_main {
+  margin-bottom: 50px;
 }
 
 .prd_in_main > .container {
-  padding-bottom: 50px;
+  background-color: #fcf0e3;
+  border: 2px solid #ec8352;
+  padding: 20px;
 }
 
-.prd_in_titleshow {
+.prd_in_main > .container > .prd_in_titleshow {
   background-image: url("../img/title.png");
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  border: 1px solid #000;
+  color: #921707;
+  margin: 50px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +226,7 @@ table {
   height: 270px;
 }
 
-.prd_in_titleshow .prd_in_title {
+.prd_in_main > .container > .prd_in_titleshow .prd_in_title {
   padding-top: 60px;
 }
 
@@ -228,7 +251,6 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #faa;
   padding: 50px;
 }
 
@@ -241,25 +263,25 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.item_price > .price_group {
-  margin: 10px;
+.item_price > .price_group > .price {
+  font-size: 28px;
 }
 
-.item_price > .price_group > p {
-  display: inline-block;
-  margin: 10px 0;
+.item_price > .price_group > .pNum {
+  color: #090c7b;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .item_price > .cart {
   display: inline-block;
-  width: 100px;
-  height: 30px;
-  line-height: 30px;
+  width: auto;
+  height: auto;
+  line-height: auto;
   border-radius: 10px;
   text-align: center;
   position: relative;
@@ -268,7 +290,9 @@ table {
   overflow: hidden;
   background-color: #090c7b;
   color: #fff;
+  font-size: 24px;
   margin: 10px 0;
+  padding: 10px;
 }
 
 .item_price > .cart:hover {
@@ -278,9 +302,9 @@ table {
 .item_price > .heart {
   margin: 10px 0;
   display: inline-block;
-  width: 60px;
-  height: 30px;
-  line-height: 30px;
+  width: auto;
+  height: auto;
+  line-height: auto;
   border-radius: 10px;
   text-align: center;
   position: relative;
@@ -289,6 +313,7 @@ table {
   overflow: hidden;
   background-color: #090c7b;
   color: #fff;
+  padding: 10px;
 }
 
 .item_price > .heart:hover {
@@ -297,10 +322,8 @@ table {
 
 .prd_in_right {
   width: 50%;
-}
-
-.prd_in_right > .prd_in_content {
-  border: 1px solid #ccc;
+  padding: 50px;
+  color: #333;
 }
 
 .item_Dsc {
@@ -331,6 +354,7 @@ table {
   font-size: 50px;
   font-weight: 500;
   display: inline;
+  color: #090c7b;
 }
 
 .good_star > .total {
@@ -342,6 +366,177 @@ table {
   text-align: center;
   font-size: 28px;
   margin: 20px;
+  color: #090c7b;
+}
+
+.prd_in_commet {
+  margin-bottom: 50px;
+}
+
+.prd_in_commet > .container {
+  background-color: #fcf0e3;
+  border: 2px solid #ec8352;
+  padding: 20px;
+}
+
+.prd_in_commet > .container > .prd_in_titleshow {
+  background-image: url("../img/title.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  color: #921707;
+  margin: 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 270px;
+}
+
+.prd_in_commet > .container > .prd_in_titleshow .prd_in_title {
+  padding-top: 60px;
+}
+
+.mem {
+  width: 90%;
+  margin: 30px auto;
+  padding: 15px;
+  background-color: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mem > .msg_pic {
+  width: 15%;
+  padding: 30px;
+}
+
+.mem > .msg_pic > .msg_img {
+  text-align: center;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.msg_txt {
+  width: 80%;
+  padding: 5px;
+}
+
+.msg_txt > .msg_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.msg_txt > .msg_title > .msg_id {
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px;
+}
+
+.msg_txt > .msg_info {
+  padding: 10px;
+}
+
+.msg_txt > .msg_info > p {
+  font-size: 20px;
+}
+
+.msg_txt > .msg_time {
+  padding: 10px;
+}
+
+.mem > .report {
+  width: 5%;
+  height: 30px;
+  line-height: 30px;
+  color: #333;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.comment_out > .container {
+  background-color: #fcf0e3;
+  border: 2px solid #ec8352;
+  padding: 20px;
+}
+
+.msg_content {
+  width: 90%;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #ccc;
+}
+
+.form_id {
+  width: 80%;
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.form_id > p {
+  margin-right: 10px;
+}
+
+.form_id > .msg_id {
+  border-radius: 5px;
+  width: 20%;
+  margin-right: 20px;
+}
+
+.form_txt {
+  width: 100%;
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.form_txt > .btn {
+  display: inline-block;
+  width: auto;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  outline: none;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #090c7b;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  line-height: 16px;
+  margin-left: 5%;
+}
+
+.form_txt > .btn:hover {
+  cursor: pointer;
 }
 
 img {
